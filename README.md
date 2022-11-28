@@ -1,7 +1,13 @@
-# asterisk_to_telegram
+# Отправка в телеграмм сообщений с номерами пропущеных звонков.
 
+1) Изменить в файлах:
 - в файле lost_4_days.sql заполнить 10 цифр номера получатель вместо XXXXXXXXXX
 - в файле lost_4_days.sh заполнить параметры СhatID= и  BotToken=
+2) добавить скрипт lost_4_days.sh в cron
 
 # Отправка статистики за день
+
+1) Изменить в файлах:
 - в файле stats_today.sql установить номер получателя AND did = 'XXXXXXXXXX'
+- в файле stats_today.sh заполнить параметры СhatID= и  BotToken=
+2) добавить скрипт stats_today.sh в cron
