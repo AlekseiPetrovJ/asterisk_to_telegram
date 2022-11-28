@@ -5,7 +5,7 @@ FROM
         cdr
 WHERE
         calldate > DATE_SUB(NOW(), INTERVAL 8 HOUR)
-        AND did = '3479258822'
+        AND did = 'XXXXXXXXXX'
         AND disposition='ANSWERED';
 
 SELECT
